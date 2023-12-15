@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <input type="password" placeholder="password" id="password">
+        <img src="/eye-close.png" class="close" onclick="visiable()">
+        <img src="/eye-open.png" class="open" onclick="inVisiable()">
+    </div>
+</body>
+   <script>
+     
+     const show = document.querySelector('#password');
+     const visi = document.querySelector('.open');
+     const inVisi = document.querySelector('.close');
+     function visiable(){
+        if(show.type == 'password'){
+            show.type = 'text';
+            visi.style.display = 'block';
+            inVisi.style.display = 'none';  
+        } else {
+            show.type = 'password';
+        }
+     }
+     
+     function inVisiable(){
+        show.type = 'password';
+            visi.style.display = 'none';
+            inVisi.style.display = 'block';  
+     }
+
+
+
+   </script>
+    
+</html>

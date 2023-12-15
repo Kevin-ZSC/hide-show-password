@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+}
+.close{
+   width: 20px;
+   height: 20px;
+   margin-left: -30px;
+   display: block;
+}
+
+.open{
+   width: 20px;
+   height: 20px;
+   margin-left: -30px;
+   display: none;
+}
+
+.main input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+}
